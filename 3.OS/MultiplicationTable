@@ -1,0 +1,13 @@
+#Write a shell script to display Multiplication table
+
+clear
+echo "Enter a number"
+read num
+fact=1
+no=1
+while [ $no -le 10 ]
+do
+fact=`expr $no \* $num`
+echo "$num * $no = $fact"
+no=`expr $no + 1`
+done
